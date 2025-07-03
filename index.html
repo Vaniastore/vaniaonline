@@ -5,20 +5,108 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Vania Store</title>
   <style>
-    body { margin: 0; font-family: 'Segoe UI', sans-serif; color: #333; background: #fff; }
-    header, footer { background: #f8f8f8; padding: 20px 30px; display: flex; justify-content: space-between; align-items: center; }
-    nav a { margin: 0 15px; text-decoration: none; color: #333; font-weight: 500; }
-    .hero { text-align: center; padding: 80px 20px; background: linear-gradient(to right, #f9f9f9, #ffffff); }
-    .hero h1 { font-size: 2.5em; color: #333; margin-bottom: 15px; }
-    .hero p { font-size: 1.1em; color: #555; }
-    .section { padding: 60px 20px; max-width: 900px; margin: auto; text-align: center; }
-    .produk { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; }
-    .card { border: 1px solid #ddd; border-radius: 12px; padding: 20px; width: 260px; box-shadow: 0 2px 6px rgba(0,0,0,0.05); display: flex; flex-direction: column; align-items: center; }
-    .card img { width: 100%; border-radius: 8px; }
-    .card a { margin-top: 10px; background: #333; color: white; padding: 10px 20px; border: none; border-radius: 6px; cursor: pointer; font-weight: 600; text-decoration: none; display: inline-block; }
-    .cta { background: #eaeaea; padding: 40px 20px; border-radius: 12px; margin-top: 40px; }
-    .btn { background: #333; color: white; padding: 12px 30px; border: none; border-radius: 8px; cursor: pointer; font-weight: bold; }
-    footer p { margin: 5px 0; font-size: 0.9em; }
+    :root {
+      --blush-sand: #f8e1e7;
+      --blush-pink: #eecfd6;
+      --text-dark: #4a3c3c;
+      --accent: #c59ca6;
+    }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      color: var(--text-dark);
+      background: var(--blush-sand);
+    }
+    header, footer {
+      background: var(--blush-pink);
+      padding: 20px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: var(--text-dark);
+      font-weight: 500;
+    }
+    .hero {
+      text-align: center;
+      padding: 80px 20px;
+      background: linear-gradient(to right, #fbeff2, #f8e1e7);
+    }
+    .hero h1 {
+      font-size: 2.5em;
+      color: var(--text-dark);
+      margin-bottom: 15px;
+    }
+    .hero p {
+      font-size: 1.1em;
+      color: #6a5555;
+    }
+    .section {
+      padding: 60px 20px;
+      max-width: 900px;
+      margin: auto;
+      text-align: center;
+    }
+    .produk {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+    .card {
+      background: white;
+      border: none;
+      border-radius: 16px;
+      padding: 20px;
+      width: 260px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      transition: transform 0.2s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .card img {
+      width: 100%;
+      border-radius: 12px;
+      margin-bottom: 12px;
+    }
+    .card a {
+      margin-top: 10px;
+      background: var(--accent);
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: 600;
+      text-decoration: none;
+      display: inline-block;
+    }
+    .cta {
+      background: var(--blush-pink);
+      padding: 40px 20px;
+      border-radius: 12px;
+      margin-top: 40px;
+    }
+    .btn {
+      background: var(--accent);
+      color: white;
+      padding: 12px 30px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    footer p {
+      margin: 5px 0;
+      font-size: 0.9em;
+    }
   </style>
 </head>
 <body>
