@@ -11,6 +11,9 @@
       --text-dark: #4a3c3c;
       --accent: #c59ca6;
     }
+    * {
+      transition: all 0.3s ease-in-out;
+    }
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
@@ -29,6 +32,9 @@
       text-decoration: none;
       color: var(--text-dark);
       font-weight: 500;
+    }
+    nav a:hover {
+      color: var(--accent);
     }
     .hero {
       text-align: center;
@@ -66,10 +72,11 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      transition: transform 0.2s ease;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
     .card:hover {
       transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.1);
     }
     .card img {
       width: 100%;
@@ -88,6 +95,9 @@
       text-decoration: none;
       display: inline-block;
     }
+    .card a:hover {
+      background-color: #a97f8b;
+    }
     .cta {
       background: var(--blush-pink);
       padding: 40px 20px;
@@ -102,6 +112,10 @@
       border-radius: 8px;
       cursor: pointer;
       font-weight: bold;
+      transition: background 0.3s ease;
+    }
+    .btn:hover {
+      background: #a97f8b;
     }
     footer p {
       margin: 5px 0;
@@ -136,24 +150,34 @@
   <div class="produk">
     <div class="card">
       <img src="https://down-sg.img.susercontent.com/file/sg-11134201-7ratu-mb7z0xfmhk5s02.webp" alt="Pashmina Hijab Instan Magnet" />
-      <h3>PASHMINA HIJAB INSTAN MAGNET</h3>
-      <p>Nyaman dan praktis untuk aktivitas harian</p>
+      <p><strong>Rp129.000</strong></p>
+<p>Nyaman dan praktis untuk aktivitas harian</p>
       <a href="https://pashmina-hijab-instan-magnet.vania.web.id/" target="_blank">Beli Sekarang</a>
     </div>
     <div class="card">
       <img src="https://down-sg.img.susercontent.com/file/sg-11134201-7rffc-m3vxgnwbv49721.webp" alt="Hijab Bergo Twist Malay" />
-      <h3>HIJAB BERGO TWIST MALAY</h3>
-      <p>Desain modern untuk tampil percaya diri</p>
+      <p><strong>Rp125.000</strong></p>
+<p>Desain modern untuk tampil percaya diri</p>
       <a href="https://hijab-bergo-twist-malay.vania.web.id/" target="_blank">Beli Sekarang</a>
     </div>
     <div class="card">
       <img src="https://cdn.orderonline.id/uploads/images_9776141750523639394.jpg" alt="Alyssa Top Premium Knit" />
-      <h3>ALYSSA TOP PREMIUM KNIT</h3>
-      <p>Cocok untuk outfit harian yang stylish</p>
+      <p><strong>Rp166.000</strong></p>
+<p>Cocok untuk outfit harian yang stylish</p>
       <a href="https://alyssa-top-premium-knit.vania.web.id/" target="_blank">Beli Sekarang</a>
+    </div><div class="card">
+      <img src="https://cdn.orderonline.id/uploads/images_3073041747898749270.jpg" alt="ADELLA INSTAN HIJAB" />
+      <p><strong>Rp139.000</strong></p>
+<p>Ringan, adem & cocok untuk kegiatan harian</p>
+      <a href="https://adella-instan-hijab.vania.web.id/" target="_blank">Beli Sekarang</a>
+    </div>
+    <div class="card">
+      <img src="https://down-id.img.susercontent.com/file/id-11134207-7r991-lvcm6debrtlra5@resize_w450_nl.webp" alt="BRIANA BERGO MOTIF" />
+      <p><strong>Rp185.000</strong></p>
+<p>Desain simpel elegan, cocok untuk ngantor maupun hangout</p>
+      <a href="https://briana-bergo-motif.vania.web.id/" target="_blank">Beli Sekarang</a>
     </div>
   </div>
-</section>
 
 <section class="section" id="testimoni">
   <h2>Apa Kata Mereka?</h2>
